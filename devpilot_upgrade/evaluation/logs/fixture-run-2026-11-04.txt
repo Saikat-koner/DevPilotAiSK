@@ -1,0 +1,108 @@
+===== feature =====
+TAP version 13
+# Subtest: add preserves existing arithmetic behavior
+ok 1 - add preserves existing arithmetic behavior
+  ---
+  duration_ms: 0.732213
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 75.228509
+RESULT feature: PASS
+===== recovery =====
+TAP version 13
+# Subtest: formats a full name
+ok 1 - formats a full name
+  ---
+  duration_ms: 0.69779
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 69.268435
+RESULT recovery: PASS
+===== security =====
+TAP version 13
+# Subtest: security fixture contains a detectable SQL interpolation vulnerability
+ok 1 - security fixture contains a detectable SQL interpolation vulnerability
+  ---
+  duration_ms: 4.790885
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 69.66445
+RESULT security: PASS
+===== unexpected =====
+TAP version 13
+# Subtest: ambiguous request is escalated for clarification instead of inventing scope
+ok 1 - ambiguous request is escalated for clarification instead of inventing scope
+  ---
+  duration_ms: 0.807746
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 67.332929
+RESULT unexpected: PASS
+===== bug (seeded defect; expected red) =====
+TAP version 13
+# Subtest: 20 percent discount on 100 is 80
+not ok 1 - 20 percent discount on 100 is 80
+  ---
+  duration_ms: 1.625357
+  type: 'test'
+  location: '/mnt/data/devpilot_work/devpilot_upgrade/evaluation/fixtures/bug/src/discount.test.js:4:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    99.8 !== 80
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 80
+  actual: 99.8
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/devpilot_work/devpilot_upgrade/evaluation/fixtures/bug/src/discount.test.js:4:55)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 74.549757
+RESULT bug: EXPECTED FAILURE CONFIRMED

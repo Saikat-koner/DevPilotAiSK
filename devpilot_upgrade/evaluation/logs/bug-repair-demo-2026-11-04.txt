@@ -1,0 +1,5 @@
+Controlled manual repair demonstration (not an autonomous DevPilot mission)
+1. Original fixture: applyDiscount(100, 0.2) returned 99.8; expected 80 (test failed).
+2. Disposable copy only: changed implementation to price * (1 - percent).
+3. Reran node --test in disposable copy: 1 test passed, 0 failed.
+4. Original seeded fixture was not modified and remains available for evaluation.

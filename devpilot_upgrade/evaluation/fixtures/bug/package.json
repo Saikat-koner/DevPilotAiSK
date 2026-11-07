@@ -1,0 +1,8 @@
+{
+  "name": "devpilot-bug-fixture",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "type": "module"
+}

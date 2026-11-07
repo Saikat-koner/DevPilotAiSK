@@ -1,0 +1,8 @@
+{
+  "name": "devpilot-feature-fixture",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "type": "module"
+}
